@@ -34,7 +34,7 @@ def transpose(M):
     trans_M = np.zeros((n,n))
     for i in range(n):
         for j in range(n):
-            trans_M[j][i] = M[i][j]
+            trans_M[i][j] = M[j][i]
     return trans_M
     
 
