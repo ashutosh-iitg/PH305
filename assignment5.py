@@ -1,7 +1,7 @@
 '''=================================================
 ! Lab No: 04
 ! Title : Gauss Seidel and Jacobi Iteration method
-! Date: 13/08/2018
+! Date: 27/08/2018
 ! Name : Ashutosh Kumar Mandal
 ! Roll No: 160121010
 ! Webmail : ashutosh3004@iitg.ac.in
