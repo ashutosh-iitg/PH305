@@ -67,11 +67,8 @@ def GaussJ(A, B, b, doPricing = True):
         B[k] = B[k]/A[k][k]
         b[k] = b[k]/A[k][k]  
         A[k] = A[k]/A[k][k]
-            
-    x = np.zeros(n)
-    x = b
     
-    return x
+    return b
 
 
 
