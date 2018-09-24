@@ -1,3 +1,12 @@
+'''======================================
+! Lab No: 06
+! Title : Jacobi Method
+! Date: 24/09/2018
+! Name : Ashutosh Kumar Mandal
+! Roll No: 160121010
+! Webmail : ashutosh3004@iitg.ac.in
+========================================='''
+
 import numpy as np
 import math
 import copy
