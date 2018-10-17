@@ -1,5 +1,5 @@
 '''~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-! Lab No: 07
+! Lab No: 08
 ! Title : Euler and RK-4 Method for Harmonic Oscillator
 ! Date: 08/10/2018
 ! Name : Ashutosh Kumar Mandal
