@@ -1,5 +1,5 @@
 '''~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-! Lab No: 08
+! Lab No: 09
 ! Title : Difference & Shooting Method for Boundary Value Problems
 ! Date: 22/10/2018
 ! Name : Ashutosh Kumar Mandal
@@ -13,6 +13,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 np.set_printoptions(formatter={'float': lambda x: "{0:0.6f}".format(x)})
+degree_sign = u'\N{DEGREE SIGN}'
 
 def act_f(x):
     return ((73.4523 * math.exp(0.1 * x)) - (53.4523 * math.exp(-0.1 * x)) + 20)
@@ -102,6 +103,7 @@ if __name__ == "__main__" :
 	plt.plot(hit_x, hit_T, label = "Hit")
 	#plt.plot(x, act_T, label = "Actual Solution")
 	plt.xlabel("Length (m)")
-	plt.ylabel("Temperature ($deg$C)")
+	plt.ylabel("Temperature ("+ degree_sign +"C)")
+	plt.title("Shooting Method")
 	plt.legend()
 	plt.show()
