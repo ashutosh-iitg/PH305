@@ -32,7 +32,7 @@ def gaussSeidel(A,b,guess):
 	x_gauss = []
 	for i in range(n):
 		x_prev[i] = guess[i]
-	while( error > 0.0000000001 ):
+	while( error > 0.01 ):
 		error = 0;
 		iteration += 1
 		i = 0
