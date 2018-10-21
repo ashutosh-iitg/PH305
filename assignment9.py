@@ -97,11 +97,12 @@ if __name__ == "__main__" :
 		x.append(t)
 		t += h
 
+	#Plot Solution of Shooting Method
 	plt.grid(True)
 	plt.plot(shot_1_x, shot_1_T, label = "Shot 1")
 	plt.plot(shot_2_x, shot_2_T, label = "Shot 2")
 	plt.plot(hit_x, hit_T, label = "Hit")
-	#plt.plot(x, act_T, label = "Actual Solution")
+	plt.plot(x, act_T,'--', label = "Analytical Solution")
 	plt.xlabel("Length (m)")
 	plt.ylabel("Temperature ("+ degree_sign +"C)")
 	plt.title("Shooting Method")
