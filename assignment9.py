@@ -62,11 +62,11 @@ def shooting(x1,x2,T1,T2):
 
 	return shot_1,shot_2,hit
 
-def difference(x1,x2,T1,T2, n = 10):
+def difference(x1,x2,T1,T2, n = 12):
 	h_prime = 0.01
 	T_a = 20
 
-	h = x2//n
+	h = x2/n
 
 	A = np.zeros((n-1,n-1))
 	b = np.zeros(n-1)
@@ -85,7 +85,7 @@ def difference(x1,x2,T1,T2, n = 10):
 	b[0] += T1
 	b[n-2] += T2
 	#print(A,"\n\n",b)
-	guess = random.sample(range(1,100),9)
+	guess = random.sample(range(1,100),n-1)
 	guess = np.array(guess)
 	#print(guess)
 
@@ -141,9 +141,9 @@ if __name__ == "__main__" :
 
 	#Plot Solution of Shooting Method
 	plt.grid(True)
-	plt.plot(shot_1_x, shot_1_T, label = "Shot 1")
-	plt.plot(shot_2_x, shot_2_T, label = "Shot 2")
-	plt.plot(hit_x, hit_T, label = "Hit")
+	plt.plot(shot_1_x, shot_1_T, '-o', label = "Shot 1")
+	plt.plot(shot_2_x, shot_2_T, '-o', label = "Shot 2")
+	plt.plot(hit_x, hit_T, 'm-s', label = "Hit")
 	plt.plot(act_x, act_T,'--', label = "Analytical Solution")
 	plt.xlabel("Length (m)")
 	plt.ylabel("Temperature ("+ degree_sign +"C)")
@@ -155,8 +155,8 @@ if __name__ == "__main__" :
 	#print (diff_T)
 
 	plt.grid(True)
-	plt.plot(x,diff_T, label = "Diff. Method")
-	plt.plot(act_x, act_T,'--', label = "Analytical Solution")
+	plt.plot(act_x, act_T,'-', label = "Analytical Solution")
+	plt.plot(x,diff_T, '--o', label = "Diff. Method")
 	plt.xlabel("Length (m)")
 	plt.ylabel("Temperature ("+ degree_sign +"C)")
 	plt.title("Finite Difference Method")
