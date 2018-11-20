@@ -74,8 +74,6 @@ if __name__ == "__main__" :
     sol_heun = heun(0,1200,h)
     sol_ralston = ralston(0,1200,h)
     
-    #x_act = []
-    #y_act = []
     x_euler = []
     y_euler = []
     x_midpoint = []
