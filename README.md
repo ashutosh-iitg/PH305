@@ -1,5 +1,7 @@
 # PH305
 Lab Assignments of Computational Physics (PH305) Course
+Academic Semester: Sem-5 (July-Nov 2018)
+Engineering Physics, IITG
 
 ### Requirements
  - Python 3.x
